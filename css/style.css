@@ -104,7 +104,7 @@ a {
   -webkit-background-clip: text;
   color: transparent;
   background-size: 200% 200%;
-  animation: gradient 5s ease infinite;
+  animation: gradient 2s ease infinite;
   font-weight: 600;
 }
 
@@ -126,49 +126,50 @@ h1 {
   padding: 0 30px;
 }
 
-.content-top__text {
+.content__text {
   font-size: 21px;
   line-height: 140%;
   margin-bottom: 20px;
 }
-.content-top__text a {
+.content__text a {
   border-bottom: 2px dotted rgb(60, 215, 226);
 }
 
-.content-top__place-info {
+.content__place-info {
   display: flex;
   gap: 60px;
+  margin-bottom: 30px;
 }
-.content-top__place-info iframe {
+.content__place-info iframe {
   width: 100%;
   min-height: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.content-top__info-list {
+.content__info-list {
   margin: auto 0;
 }
-.content-top__info-list li {
+.content__info-list li {
   position: relative;
 }
-.content-top__info-list li:nth-child(1):before {
+.content__info-list li:nth-child(1):before {
   content: url("../img/sumy/content-top/icons/icon-geo.svg");
 }
-.content-top__info-list li:nth-child(2):before {
+.content__info-list li:nth-child(2):before {
   content: url("../img/sumy/content-top/icons/icon-oclock.svg");
 }
-.content-top__info-list li:nth-child(3):before {
+.content__info-list li:nth-child(3):before {
   content: url("../img/sumy/content-top/icons/icon-phone.svg");
 }
-.content-top__info-list li::before {
+.content__info-list li::before {
   position: absolute;
   top: 5px;
   left: -35px;
 }
-.content-top__info-list li {
+.content__info-list li {
   margin-bottom: 20px;
 }
-.content-top__info-list li:nth-child(3) {
+.content__info-list li:nth-child(3) {
   margin-bottom: 0px;
 }
 
@@ -177,23 +178,23 @@ h1 {
     font-size: 28px;
     margin-bottom: 10px;
   }
-  .content-top__text {
+  .content__text {
     font-size: 18px;
     line-height: 140%;
     margin-bottom: 12px;
   }
-  .content-top__place-info {
+  .content__place-info {
     gap: 60px;
   }
-  .content-top__place-info iframe {
+  .content__place-info iframe {
     min-height: 220px;
   }
 }
 @media (max-width: 800px) {
-  .content-top__place-info {
+  .content__place-info {
     display: block;
   }
-  .content-top__info-list {
+  .content__info-list {
     padding: 20px 10px 0 40px;
     display: flex;
     -moz-column-gap: 50px;
@@ -203,7 +204,7 @@ h1 {
   }
 }
 @media (max-width: 400px) {
-  .content-top__info-list {
+  .content__info-list {
     justify-content: center;
   }
 }
@@ -211,7 +212,7 @@ h1 {
   h1 {
     font-size: 24px;
   }
-  .content-top__text {
+  .content__text {
     font-size: 16px;
     margin-bottom: 8px;
   }
@@ -220,7 +221,66 @@ h1 {
   h1 {
     font-size: 21px;
   }
-  .content-top__text {
+  .content__text {
     font-size: 14px;
   }
+}
+.swiper {
+  max-width: 1000px;
+  width: 100%;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.swiper-wrapper {
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  border-radius: 10%;
+  margin: auto 0;
+  display: flex;
+  height: 250px;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 60px;
+  transition: all ease-out 0.3s;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #fff;
+  font-size: 40px;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+}
+
+.content__range h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.content__range ul li {
+  margin-bottom: 7px;
+}
+
+.content__text-block h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.content__text-block ul li {
+  margin-bottom: 10px;
+}
+.content__text-block .reviews p {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

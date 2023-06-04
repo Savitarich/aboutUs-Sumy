@@ -10,7 +10,14 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0"
         />
-        <link rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
         <link
             rel="stylesheet"
             href="css/style.css"
@@ -26,7 +33,7 @@
                     <h1 class="title">Дитячий магазин Karapuzov у Сумах</h1>
                     <div class="p-content">
                         <div class="content-top">
-                            <p class="content-top__text">
+                            <p class="content__text">
                                 Шукаєте дитячий магазин з великим вибором
                                 товарів і грамотною консультацією? Приходьте до
                                 нас за адресою: <br />
@@ -37,7 +44,7 @@
                                     «Атріум», 3 поверх
                                 </a>
                             </p>
-                            <div class="content-top__place-info">
+                            <div class="content__place-info">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d915.3967735939129!2d34.829063623831395!3d50.91584662466801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4129018867cfa533%3A0xe06dfb6ee1c342a2!2z0JrQkNCg0JDQn9Cj0JfQntCS!5e0!3m2!1sru!2sua!4v1685733769575!5m2!1sru!2sua"
                                     style="border: 0"
@@ -45,7 +52,7 @@
                                     loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"
                                 ></iframe>
-                                <ul class="content-top__info-list">
+                                <ul class="content__info-list">
                                     <li>
                                         <h4>Адреса:</h4>
                                         <p>
@@ -65,10 +72,222 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="content__range">
+                                <h2>Асортимент Karapuzov</h2>
+                                <ul>
+                                    <li>
+                                        <b>Все для немовлят: </b>в нашому
+                                        супермаркеті можна вибрати коляску,
+                                        ліжечко, комод, автолюльку, одяг, товари
+                                        для годування і гігієни.
+                                    </li>
+                                    <li>
+                                        <b>Для дитини, що підросла:</b> ми
+                                        пропонуємо автокрісла, прогулянкові
+                                        коляски, стільчики для годування,
+                                        ходунки та шезлонги.
+                                    </li>
+                                    <li>
+                                        <b>Іграшки 0-99 років:</b> мобілі і
+                                        підвісні іграшки для немовлят,
+                                        інтерактивні та розвиваючі дитячі
+                                        іграшки, ляльки і пупси, фігурки і
+                                        рольові набори, іграшки на
+                                        радіокеруванні, моделі автомобілів і
+                                        треки, конструктори та дерев'яні
+                                        іграшки.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content__gallery">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a
+                                                href="img/sumy/gallery/01.jpg"
+                                                data-fancybox="gallery"
+                                            >
+                                                <img
+                                                    src="img/sumy/gallery/01.jpg"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a
+                                                href="img/sumy/gallery/02.jpg"
+                                                data-fancybox="gallery"
+                                            >
+                                                <img
+                                                    src="img/sumy/gallery/02.jpg"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a
+                                                href="img/sumy/gallery/04.jpg"
+                                                data-fancybox="gallery"
+                                            >
+                                                <img
+                                                    src="img/sumy/gallery/04.jpg"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a
+                                                href="img/sumy/gallery/05.jpg"
+                                                data-fancybox="gallery"
+                                            >
+                                                <img
+                                                    src="img/sumy/gallery/05.jpg"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a
+                                                href="img/sumy/gallery/03.jpg"
+                                                data-fancybox="gallery"
+                                            >
+                                                <img
+                                                    src="img/sumy/gallery/03.jpg"
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="content__text-block">
+                                <div class="advantages">
+                                    <h2>Чому нас обирають?</h2>
+                                    <ul>
+                                        <li>
+                                            <b>Професійні консультації:</b> наші
+                                            продавці не будуть нав'язувати
+                                            непотрібний товар, але коли Вам буде
+                                            потрібно, допоможуть зробити,
+                                            тільки, правильний вибір.
+                                        </li>
+                                        <li>
+                                            <b>Послуга складу:</b> можна
+                                            залишити на зберігання придбаний
+                                            товар на будь-який зручний період.
+                                        </li>
+                                        <li>
+                                            <b>Сервіс в магазині:</b> наші
+                                            співробітники допоможуть донести до
+                                            автомобіля велику покупку,
+                                            встановити автокрісло, зібрати
+                                            дитяче ліжечко або комод.
+                                        </li>
+                                        <li>
+                                            <b>Програма лояльності:</b>
+                                            накопичувальна дисконтна карта надає
+                                            знижку до -10% на іграшки, одяг,
+                                            взуття, а також до -3% на
+                                            великогабаритний товар, коляски і
+                                            гігієну (крім деяких брендів). У
+                                            день народження дитини діє знижка
+                                            -15% на іграшки, одяг та взуття.
+                                        </li>
+                                        <li>
+                                            <b>Купівля в кредит:</b> послуга
+                                            «Миттєва розстрочка» від
+                                            ПриватБанку, «Розстрочка 0%» на 4
+                                            місяці від Альфа Банку.
+                                        </li>
+                                        <li>
+                                            <b>Акції та знижки:</b> проводяться
+                                            в супермаркеті регулярно, а
+                                            дізнатися про актуальні пропозиції
+                                            та новинки ви можете на наших
+                                            сторінках Instagram, Facebook.
+                                            Підписуйтесь, щоб бути в курсі і
+                                            робити вигідні покупки в
+                                            «Карапузов»!
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reviews">
+                                    <h2>Що про нас говорять покупці?</h2>
+                                    <p>
+                                        Дивіться реальні відгуки про
+                                        супермаркеті Карапузов в нашому
+                                        <a
+                                            target="_blank"
+                                            href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODcwMDk4Mjk0NDA1MTE0?igshid=apfdphlm9070&story_media_id=2003080531180455010_4632682089"
+                                            >Instagram</a
+                                        >
+                                        . Якщо такі відгуки для вас важливі і ви
+                                        в пошуку улюбленого дитячого магазину,
+                                        то приходьте в супермаркет «Карапузов».
+                                        Ми завжди раді знайти те, що потрібно
+                                        саме вам!
+                                    </p>
+                                </div>
+                                <div class="baby-package">
+                                    <h2>«Пакунок малюка» у Сумах</h2>
+                                    <p>
+                                        Karapuzov – дитячий супермаркет зі
+                                        списку магазинів 2021 року з оплатою за
+                                        картою "Пакунок малюка".
+                                    </p>
+                                    <p>
+                                        Обирайте всі необхідні товари для
+                                        немовлят та розраховуйтеся карткою за
+                                        програмою "Пакунок малюка" прямо на касі
+                                        через термінал.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+            Fancybox.bind("[data-fancybox]", {});
+
+            const swiper = new Swiper(".swiper", {
+                // Optional parameters
+                loop: true,
+                speed: 600,
+                effect: "coverflow",
+                slidesPerView: 1,
+                centeredSlides: true,
+                spaceBetween: 0,
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 2500,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    480: {
+                        slidesPerView: 1.3,
+                    },
+                    660: {
+                        slidesPerView: 1.5,
+                    },
+                    760: {
+                        slidesPerView: 1.8,
+                    },
+                    // when window width is >= 640px
+                    860: {
+                        slidesPerView: 2,
+                    },
+                },
+            });
+        </script>
     </body>
 </html>
