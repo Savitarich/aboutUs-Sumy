@@ -42,13 +42,6 @@ a {
     }
 }
 
-h1 {
-    margin-bottom: 20px;
-    text-align: center;
-    line-height: 100%;
-    padding: 0 30px;
-}
-
 .content__text {
     font-size: 21px;
     line-height: 140%;
@@ -67,9 +60,16 @@ h1 {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     }
 }
-.content__info-list {
+.content__info-wrapper {
+    h2 {
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+}
+.content__info {
     margin: auto 0;
-    li {
+    div {
         position: relative;
         &:nth-child(1):before {
             content: url("../img/sumy/content-top/icons/icon-geo.svg");
@@ -80,15 +80,18 @@ h1 {
         &:nth-child(3):before {
             content: url("../img/sumy/content-top/icons/icon-phone.svg");
         }
+        &:nth-child(4):before {
+            content: url("../img/sumy/content-top/icons/icon-inst.svg");
+        }
         &::before {
             position: absolute;
             top: 5px;
             left: -35px;
         }
         & {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
-        &:nth-child(3) {
+        &:nth-child(4) {
             margin-bottom: 0px;
         }
     }
@@ -114,16 +117,21 @@ h1 {
     .content__place-info {
         display: block;
     }
-    .content__info-list {
+    .content__info {
         padding: 20px 10px 0 40px;
         display: flex;
         column-gap: 50px;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 600px) {
+    .content__info {
+        justify-content: space-evenly;
     }
 }
 @media (max-width: 400px) {
-    .content__info-list {
+    .content__info {
         justify-content: center;
     }
 }
